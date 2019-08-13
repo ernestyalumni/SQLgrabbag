@@ -1,0 +1,18 @@
+# @file .gitignore
+# @ref https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+# @ref https://flask.palletsprojects.com/en/1.1.x/tutorial/layout/
+
+venv/
+
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+*.egg-info/
