@@ -1,5 +1,14 @@
 # @file __init__.py
 # @ref https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/
+# https://github.com/pallets/flask/tree/master/examples/tutorial
+# To run this,
+# For Linux and Mac,
+#
+# export FLASK_APP=flaskr
+# export FLASK_ENV=development
+# flask run
+# Then visit http://127.0.0.1:5000/hello
+
 
 from pathlib import (Path, PurePath)
 
