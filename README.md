@@ -3,7 +3,26 @@ Using SQLAlchemy in Python to automate screenscraping (of Financial data) all th
 
 ## Summary
 
+**Update** (20190827) Examples of using Flask and, eventually, Flask with Pandas and SQLAlchemy, are here!
+
 I wanted to demonstrate my mastery over SQL and relational databases in general (for job-seeking purposes) and so I pulled up some old, independent passion projects I did way before there was g
+
+## Flask Examples
+
+### `flaskr/`
+
+*Run* (from *top-level* `SQLgrabbag`, *not* from the `flaskr` subdirectory:
+```
+export FLASK_APP=flaskr
+export FLASK_ENV=development
+flask run
+```
+Then visit `http://127.0.0.1:5000/hello`
+
+### `scripts/`
+
+- `hello_world_flask.py`
+* Run: `env FLASK_APP=hello_world_flask.py flask run`, then open the "website" `http://127.0.0.1:5000/ `
 
 ### Table of Contents
 ================
