@@ -10,7 +10,7 @@ import numpy as np
 
 df = pd.read_csv("data/FRB_G19.csv")
 
-length = len(df)
+length_of_df = len(df)
 
 app = Flask(__name__)
 
@@ -20,12 +20,12 @@ app.debug = True
 def index():
 # def home():
   # Read in the Data via Pandas
-  fruit_df = pd.read_table("data/fruit.txt")
+  #fruit_df = pd.read_table("data/fruit.txt")
   return render_template("index.html.j2")
 
-#@app.route("/df")
-#def dataframe():
-#  return render_template("df.html.j2", length=length, dataframe=df.to_html())
+@app.route("/df")
+def dataframe():
+  return render_template("df.html.j2", length=length_of_df, dataframe=df.to_html())
 
 
 if __name__ == '__main__':
